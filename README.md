@@ -15,8 +15,8 @@ This Java class, "Droid," models the state and behavior of robots. It includes i
 2. Compile and run the Java program:
 
     ```
-    javac buildaDroid.java
-    java buildaDroid
+    javac Droid.java
+    java Droid
     ```
 
 3. Explore the interactions and behaviors of droids in the `main` method.
