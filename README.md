@@ -1,45 +1,25 @@
-# Build a Droid
- # Droid Java Class
 
-This Java class, "Droid," models the state and behavior of robots. It includes instance fields for the droid's name and battery level, along with methods for performing tasks, stating the battery level, reporting energy levels, and transferring energy between instances.
+# Droid Class
 
-## Getting Started
+This Java class defines a Droid with attributes for name and battery level. It includes methods for performing tasks, reporting battery levels, and transferring energy between instances.
 
-1. Clone the repository to your local machine:
+## Usage
 
-    ```
-    git clone https://github.com/pcun/Build-a-Droid.git
-    cd DroidClass
-    ```
+1. Clone the repository.
+2. Compile the Java program.
+3. Run the program.
 
-2. Compile and run the Java program:
+## Methods
 
-    ```
-    javac Droid.java
-    java Droid
-    ```
+- `performTask(String task)`: Simulates the droid performing a task, deducting 10 from the battery level.
+- `energyReport()`: Prints the droid's current battery level.
+- `energyTransfer(Droid otherDroid)`: Transfers 20 battery levels from the current droid to another droid.
 
-3. Explore the interactions and behaviors of droids in the `main` method.
+## Unit Test
 
-## Class Overview
+To ensure the correct functionality of the Droid class, unit tests have been provided in the `DroidTest.java` file. Follow these steps to run the tests:
 
-- **Instance Fields:**
-  - `batteryLevel` (integer): Stores the droid's battery level.
-  - `name` (String): Stores the droid's name.
+1. Ensure that JUnit is included in your project dependencies.
+2. Run the `JUnit test for Droid.java` file.
 
-- **Constructor:**
-  - `Droid(String droidName)`: Initializes a new Droid instance with the given name and a default battery level of 100.
-
-- **Methods:**
-  - `toString()`: Returns a string introducing the droid.
-  - `performTask(String task)`: Simulates the droid performing a task and decreases its battery level.
-  - `energyReport()`: Prints the droid's current battery level.
-  - `energyTransfer(Droid otherDroid)`: Transfers energy between two droids.
-
-## Examples
-
-Explore the provided examples in the `main` method to understand how droids are created, perform tasks, and transfer energy.
-
-Feel free to experiment with additional instances and methods to enhance your understanding of the Droid class.
-
-
+Feel free to expand and customize the unit tests based on specific requirements.
